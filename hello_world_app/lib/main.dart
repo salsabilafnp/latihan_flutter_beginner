@@ -12,7 +12,23 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Hello World App"),
         ),
-        body: Center(child: Text("Hello World")),
+        body: Center(
+            child: Container(
+                color: Colors.lightBlue,
+                width: 150,
+                height: 100,
+                child: Text(
+                  "This application is my first flutter app, hopefully I can be a Flutter Dev",
+                  // maxLines: 2,
+                  // overflow: TextOverflow.clip,
+                  // softWrap: false,
+                  // textAlign: TextAlign.justify,
+                  style: TextStyle(
+                      color: Colors.deepPurple,
+                      fontStyle: FontStyle.italic,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18),
+                ))),
       ),
     );
   }
